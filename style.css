@@ -1,0 +1,22 @@
+body{
+    background-color: bisque;
+}
+
+section{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form{
+    background-color: white;
+}
+
+form.popup{
+    display: none;
+    z-index: 5;
+}
+
+label.question{
+    font-weight: bold;
+}

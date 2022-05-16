@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create QR</title>
+</head>
+
+<body>
+    <h1>Create a QR</h1>
+    <button onclick="toggleForm(this)" id="Create_QR">Create New QR</button>
+    <form action="submit" class="popup">
+        <section>
+            <label for="q1" class="question">Create QR for:</label><br>
+            <input class="q1" type="checkbox">URL<br>
+            <input class="q1" type="checkbox">Visiting Card<br>
+            <input class="q1" type="checkbox">Social Media<br>
+            <input class="q1" type="checkbox">Menu<br>
+            <input class="q1" type="checkbox">MultiURL<br>
+            <input class="q1" type="checkbox">App Store<br>
+            <input class="q1" type="checkbox">Inventory<br>
+        </section>
+        <section>
+            <label for="q2" class="question">Customize your QR:</label><br>
+            <label for="pattern"></label>Choose Your Pattern
+            <select class="q2" name="pattern">
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+                <option value="Option3">Option3</option>
+                <option value="Option4">Option4</option>
+            </select><br>
+            <label class="q2" for="color">Choose Background Color</label>
+            <input type="color" id="color"><br>
+            <label class="q2" for="logo">Add your Logo</label>
+            <input type="file"><br>
+            <label class="q2" for="frame">Choose Frame</label>
+            <select name="frame">
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+                <option value="Option3">Option3</option>
+                <option value="Option4">Option4</option>
+            </select><br>
+            <input type="checkbox">Add Button
+            <input type="checkbox">Add Social Sharing button
+        </section>
+        <button type="submit">Save as Template</button><br>
+        <button type="submit">Save as pdf and print</button>
+    </form>
+
+</body>
+<script src="javascript.js"></script>
+
+
+</html>

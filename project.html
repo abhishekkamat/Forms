@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+
+<body>
+    <h1>Project</h1>
+    <button onclick="toggleForm()">New Project</button>
+    <form action="submit" class="popup">
+        <section>
+            <h1>Create Project</h1><br>
+            <input type="text" placeholder="Project Name"><br>
+            <label for="workspace-restric">Choose Workspace Restriction</label>
+            <select name="workspace-restric">
+                <option value="public">Public</option>
+                <option value="OWM">Only Workspace Members</option>
+                <option value="private">Private(Only selected members)</option>
+            </select><br>
+            <label for="guest-restric">Guest Invite restrictions</label>
+            <select name="guest-restric">
+                <option value="public">Public</option>
+                <option value="OWM">Only Workspace Members</option>
+                <option value="private">Private(Only selected members)</option>
+            </select><br>
+            <label for="project_view">Select default view for Project</label><br>
+            <input type="radio" name="project_view" value="board">Board<br>
+            <input type="radio" name="project_view" value="card">Card<br>
+            <input type="radio" name="project_view" value="calendar">Calendar<br>
+
+
+        </section>
+    </form>
+
+</body>
+<script src="javascript.js"></script>
+
+</html>
