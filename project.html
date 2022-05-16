@@ -14,7 +14,7 @@
     <button onclick="toggleForm()">New Project</button>
     <form action="submit" class="popup">
         <section>
-            <h1>Create Project</h1><br>
+            <h1>Create Project</h1>
             <input type="text" placeholder="Project Name"><br>
             <label for="workspace-restric">Choose Workspace Restriction</label>
             <select name="workspace-restric">
@@ -32,8 +32,34 @@
             <input type="radio" name="project_view" value="board">Board<br>
             <input type="radio" name="project_view" value="card">Card<br>
             <input type="radio" name="project_view" value="calendar">Calendar<br>
+        </section>
 
+        <section>
+            <h1>Scheduling a Meeting</h1>
+            <label for="participants">Enter emails of participants(Comma Separated)</label><br>
+            <input type="email" name="participants" multiple><br>
+            <label for="meeting_time">Schedule meeting on:</label><br>
+            <input type="datetime-local" name="meeting_time"><br>
+            <label for="meetingtype">Meeting Type:</label>
+            <input type="text"><br>
+            <label for="duration">Approximate Duration</label>
+            <input type="time"><br>
+            <input type="text" placeholder="Meeting Venue"><br>
+            <button>Generate Meeting Link</button><br>
+            <button>Set Reminder</button><br>
+            <button>Share</button><br>
+        </section>
 
+        <section>
+            <h1>Schedule a Roadmap</h1>
+            <input type="text" placeholder="Add a Goal to achieve"><br>
+            <label for="goal_init">Add an initiative date for the Goal</label><br>
+            <input type="date"><br>
+            <label for="goal_dead">Add a deadline for the goal</label><br>
+            <input type="date"><br>
+            <label for="team-members">Assign goal to:</label>
+            <input type="email" placeholder="Emails(Comma separated)"><br>
+            <button>Add Goal</button>
         </section>
     </form>
 
