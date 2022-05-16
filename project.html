@@ -61,6 +61,25 @@
             <input type="email" placeholder="Emails(Comma separated)"><br>
             <button>Add Goal</button>
         </section>
+
+        <section>
+            <h1>Notify/Shout Out/ Announcements</h1>
+            <input type="text" placeholder="Notification Subject"><br>
+            <input type="text" placeholder="Notification Description"><br>
+            <label for="noti_img">Attach Image</label>
+            <input type="file"><br>
+            <label for="noti_receiver">Choose individual or Team to notify</label><br>
+            <datalist id="teams">
+                <option value="team1">Team1</option>
+                <option value="team2">Team2</option>
+                <option value="team3">Team3</option>
+                <option value="team4">Team4</option>
+                <option value="team5">Team5</option>
+            </datalist>
+            <input type="email" list="teams">
+            <button>Save</button>
+            <button>Share</button>
+        </section>
     </form>
 
 </body>
